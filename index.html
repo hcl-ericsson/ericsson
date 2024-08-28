@@ -6,56 +6,63 @@
     <title>Activity Notes</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('dark-galaxy-wallpaper-2560x1080_14.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center;
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 100vh; /* Ensures the background covers at least the full height of the viewport */
-    color: #333;
-}
-        h1 {
-            color: red; /* Change this to your desired color */
-            text-align: center; /* Centers the text */
-            margin-top: 20px; /* Adds space above the heading */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: #333;
         }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px; /* Adds padding around the content */
-}
+        h1 {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px;
+            justify-content: center; /* Centers all boxes within the container */
+        }
 
         .box {
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white box */
+            background-color: rgba(255, 255, 255, 0.8);
             border: 2px solid #ddd;
             border-radius: 8px;
             padding: 20px;
-            width: calc(20% - 40px); 
+            width: calc(20% - 40px);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             position: relative;
         }
+
         .box:hover {
             background-color: rgba(240, 240, 240, 0.8);
         }
+
         .title {
             font-weight: bold;
             font-size: 1.2em;
-            color: #333 /* enter colour */
-            text-align: center; /* Title centered within the box */
+            color: #333;
+            text-align: center;
         }
+
         .content {
             display: none;
         }
+
         @media (max-width: 768px) {
             .box {
                 width: calc(50% - 30px);
             }
         }
+
         @media (max-width: 480px) {
             .box {
                 width: 100%;
@@ -64,15 +71,14 @@
     </style>
 </head>
 
-
 <body>
 
-    <h1> activity notes</h1> 
+    <h1>activity notes</h1>
 
     <div class="container">
         <!-- Box 1 to 50 -->
         <div class="box" onclick="copyToClipboard(this)">
-            <div class="title">EPM PW CALL </div>
+            <div class="title">EPM PW CALL</div>
             <div class="content">
                 <p>&gt;&gt;Connected with user over teams call, remote script was followed</p>
                 <p>&gt;&gt;Guided user to reset password from the EPM link KBA00263829</p>
@@ -100,11 +106,8 @@
             </div>
         </div>
 
-        <div class="box" onclick="copyToClipboard(this)">
-            <div class="title">
-        
-        <!-- Add boxes 3 to 50 here, following the same structure -->
-        
+        <!-- Add boxes 4 to 50 here, following the same structure -->
+        <!-- Example of box 50 -->
         <div class="box" onclick="copyToClipboard(this)">
             <div class="title">Title 50</div>
             <div class="content">
