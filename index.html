@@ -6,19 +6,24 @@
     <title>Copy to Clipboard</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 50px;
-            background-image: url('dark-galaxy-wallpaper-2560x1080_14.jpg'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('your-image.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Ensures the background covers at least the full height of the viewport */
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px; /* Adds padding around the content */
+}
+
         .box {
             background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white box */
             border: 2px solid #ddd;
